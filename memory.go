@@ -20,9 +20,9 @@ import (
 	"sync"
 
 	cfg "github.com/nori-io/nori-common/config"
-	"github.com/nori-io/nori-common/interfaces"
 	"github.com/nori-io/nori-common/meta"
 	noriPlugin "github.com/nori-io/nori-common/plugin"
+	"github.com/nori-io/nori-interfaces/interfaces"
 )
 
 type plugin struct {
@@ -95,7 +95,7 @@ func (p plugin) Meta() meta.Meta {
 		Description: meta.Description{
 			Name: "Nori: InMemory Message Queue",
 		},
-		Interface: meta.PubSub,
+		Interface: interfaces.PubSubInterface,
 		License: meta.License{
 			Title: "",
 			Type:  "GPLv3",
