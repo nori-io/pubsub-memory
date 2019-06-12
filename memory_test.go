@@ -19,7 +19,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/nori-io/nori-common/interfaces"
+	"github.com/nori-io/nori-interfaces/interfaces"
 )
 
 type testStruct struct {
